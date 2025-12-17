@@ -2,12 +2,47 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Mon Service</title>
+  <title>Cali Fast Drive</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<header>
   <h1>🚗 Cali Fast Drive</h1>
-  <button onclick="alert('Commande envoyée')">Commander</button>
+</header>
+
+<nav>
+  <button onclick="showPage('home')">Accueil</button>
+  <button onclick="showPage('services')">Services</button>
+  <button onclick="showPage('tarifs')">Tarifs</button>
+  <button onclick="showPage('contact')">Contact</button>
+</nav>
+
+<section id="home" class="page active">
+  <h2>Service rapide & fiable</h2>
+  <p>Disponible 24/7</p>
+</section>
+
+<section id="services" class="page">
+  <h2>Nos services</h2>
+  <ul>
+    <li>🚗 Livraison express</li>
+    <li>📦 Transport colis</li>
+    <li>🕒 Service urgent</li>
+  </ul>
+</section>
+
+<section id="tarifs" class="page">
+  <h2>Tarifs</h2>
+  <p>À partir de 10€</p>
+</section>
+
+<section id="contact" class="page">
+  <h2>Contact</h2>
+  <button onclick="commander()">Commander</button>
+</section>
+
+<script src="app.js"></script>
 </body>
 </html>
