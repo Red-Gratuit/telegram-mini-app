@@ -1,5 +1,6 @@
 body {
-  background: #0f0f0f;
+  background: url('images/fond.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: white;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -9,6 +10,15 @@ header {
   background: #000;
   padding: 15px;
   text-align: center;
+}
+
+header h1 {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #e50914; }
+  to { text-shadow: 0 0 20px #ff3b3b; }
 }
 
 nav {
@@ -23,11 +33,13 @@ nav button {
   border: none;
   color: white;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .page {
   display: none;
   padding: 20px;
+  text-align: center;
 }
 
 .page.active {
@@ -35,10 +47,28 @@ nav button {
 }
 
 button {
-  padding: 12px;
-  font-size: 16px;
-  background: #e50914;
+  padding: 15px 25px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #e50914, #ff3b3b);
   border: none;
   color: white;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 10px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
 }
