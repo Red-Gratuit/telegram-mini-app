@@ -1,10 +1,44 @@
 body {
-  background: #111;
+  background: #0f0f0f;
   color: white;
-  text-align: center;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
-button {
+
+header {
+  background: #000;
   padding: 15px;
-  font-size: 18px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #111;
+  padding: 10px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+}
+
+.page.active {
+  display: block;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  background: #e50914;
+  border: none;
+  color: white;
+  border-radius: 8px;
 }
