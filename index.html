@@ -19,15 +19,41 @@
   <button onclick="showPage('contact')">Contact</button>
 </nav>
 
+<!-- Accueil -->
 <section id="home" class="page active">
   <h2>Service rapide & fiable</h2>
   <img src="images/fond.png" alt="Voiture rapide" style="width:200px;">
-  
   <p>Disponible 24/7</p>
 </section>
 
+<!-- Services -->
 <section id="services" class="page">
   <h2>Nos services</h2>
   <ul>
     <li>🚗 Livraison express</li>
     <li>📦 Transport colis</li>
+    <li>🕒 Service urgent</li>
+  </ul>
+</section>
+
+<!-- Tarifs -->
+<section id="tarifs" class="page">
+  <h2>Tarifs</h2>
+  <p>À partir de 10€</p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="page">
+  <h2>Contact</h2>
+  <button onclick="commander()">🚀 Commander</button>
+  <button onclick="toggleMusic()">🔊 Musique</button>
+</section>
+
+<!-- Musique de fond -->
+<audio id="bgMusic" autoplay loop>
+  <source src="music/fond.mp3" type="audio/mpeg">
+</audio>
+
+<script src="app.js"></script>
+</body>
+</html>
